@@ -1,0 +1,11 @@
+.carousel-inner {
+    padding: 1em;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+  }

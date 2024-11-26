@@ -11,10 +11,11 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/aboutPage/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='gallery' Component={GalleryPage} />
       <Route path='services' Component={ServicesPage} />
       <Route path='contact' Component={ContactPage} />
+      <Route path='projects' Component={ProjectsPage} />
     </Route>
   )
 );

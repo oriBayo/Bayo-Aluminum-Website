@@ -35,21 +35,14 @@ const NavbarComp = () => {
                   <Nav.Link href='#action1'>{nav.title}</Nav.Link>
                 </LinkContainer>
               ))}
-              {/* <Nav.Link href='#action1'>בית</Nav.Link>
-              <Nav.Link href='#action2'>אודות</Nav.Link>
-              <Nav.Link href='#action2'>גלריה</Nav.Link>
-              <Nav.Link href='#action2'>שירותים</Nav.Link>
-              <Nav.Link href='#action2'>המלצות</Nav.Link>
-              <Nav.Link href='#action2'>צור קשר</Nav.Link> */}
             </Nav>
             <Nav>
-              <Button
-                variant='outline-success'
-                className='justify-self-end py-sm-0 mt-2 ms-5'
-              >
-                <FaPhone className='ms-1' />
-                {data.navbar.phoneNumber}
-              </Button>
+              <a href='tel:0524224393'>
+                <Button className='outline-primary justify-self-end py-sm-0 mt-2 ms-5 '>
+                  <FaPhone className='ms-1' />
+                  {data.navbar.phoneNumber}
+                </Button>
+              </a>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

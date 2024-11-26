@@ -1,0 +1,62 @@
+.about-page {
+    padding: 2rem ;    
+  }
+  
+  .about-title {    
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .about-subtitle {   
+    color: #4a4a4a;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .about-intro {
+    background-color: #e0e0e15e;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    
+    border-bottom: 2px solid rgb(200, 143, 20);
+    padding-bottom: 0.5rem;
+  }
+  
+  .service-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item h4 {
+    color: #0066cc;
+  }
+  
+  .contact-title {
+    color: #4a4a4a;
+  }
+  
+  .contact-info li {
+    margin-bottom: 0.5rem;
+  
+  }
+  
+  img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+  }
+
+  .about-image{
+    height: 350px;
+  }
+

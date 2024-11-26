@@ -1,0 +1,31 @@
+.hero-section {
+    background-image: url('../../images/HeroSection.jpg');
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-section .btn-primary {
+    margin-top: 0.5rem;
+  }
+  
+  .hero-container {
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container .row {
+      margin-bottom: 400px !important;   
+    }
+  
+    .hero-container .row h1 {
+      font-weight: bolder !important;
+      font-size: 40px;   
+    }
+  
+    .hero-container .btn {
+      display: none;
+    }
+  }

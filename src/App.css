@@ -1,173 +1,46 @@
+:root {
+  --primary-color: rgb(200, 143, 20);
+  --primary-color-hover: rgb(255, 255, 255);
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --banner-background: rgba(0, 0, 0, 0.4);
+}
 
-
-html{
+html {
   direction: rtl;
   font-size: 18px; 
 }
 
-.full-height{
+.full-height {
   height: 100%;
+  min-height: 100vh;
 }
 
-/* Hero Section */
-.hero-section  {
-  background-image: url('../src/images/HeroSection.jpg');
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: center;
-}
-
-.gallery-wrapper{
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: center;
-}
-
-.hero-section .btn-primary {
-  margin-top: 0.5rem;
-}
-
-.banner{
-  height: 8rem;
-  width: 100%;
-  background-color: rgba(0, 0,0,0.4);
-}
-
-.hero-container{
-  height: 100%;
-}
-
-.mustard-color{
-  background-color:rgb(200, 143, 20) !important;
+.primary-button {
+  background-color: var(--primary-color) !important;
   border: 0px !important; 
 }
 
-.mustard-color:hover{
-  background-color:rgb(255, 255, 255) !important;
-  border: 2px solid rgb(200, 143, 20) !important; 
-  color: rgb(200, 143, 20) !important;
+.primary-button:hover {
+  background-color: var(--primary-color-hover) !important;
+  border: 2px solid var(--primary-color) !important; 
+  color: var(--primary-color) !important;
 }
 
-/* products */
-
-.product-card:hover{
-  cursor: pointer;
+.outline-primary {
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background-color: #ffffff !important;
 }
 
-/* Recommendations */
-
-
+.outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color-hover) !important;
+}
 
 @media (max-width: 768px) {
-  
-  .card .img-wrapper {
-  height: 17em;
-}
-  .banner{
-      top:55%;
-      padding: 10px
-  }
- 
-  .hero-container .row{
-    margin-bottom: 400px !important;   
-  }
-
-  .hero-container .row h1{
-    font-weight:bolder!important;
-    font-size: 40px;   
-  }
-
-  .banner{
-    height: 17.5rem;
-    width: 100%;
-    background-color: rgba(0, 0,0,0.6);
-  }
-
-  .hero-container .btn{
-    display: none;
-  }
-}
-
-
-@media (min-width: 768px) {
-  
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-}
-
-.carousel-inner{
-    padding: 1em;
-    
-}
-.card{
-    margin: 0 .5em;
-    box-shadow: 2px 6px 8px 2px rgba(22, 22, 26, 0.18);
-    border: none;
-    
-}
-
-.card img {
-  max-height: 100%;
-}
-
-.underline {
-  height: 3px;
-  width: 50%;
-  background-color: #BF7D08;
-}
-
-.right{
-  position: absolute;
-  right: 0;
-}
-
-.left{
-  position: absolute;
-  left: 0;
-}
-
-.gallery-image-wrapper{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in;
-}
-
-.slide-in-right {
-  animation: slideInRight 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
-}
-
-.fade-in-up {
-  animation: fadeInUp 1s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .banner {
+    top: 55%;
+    padding: 10px;
   }
 }
